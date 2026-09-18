@@ -57,7 +57,7 @@ python -m venv .venv
 
 * **Upgrade pip**
 ```
-.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 ```
 
 * **Install Django**
@@ -128,4 +128,21 @@ python manage.py startapp app-name
 | `python manage.py test app_name` | Runs tests only for a specific app. |
 | `python manage.py test --verbosity=2` | Runs tests while displaying more detailed information. |
 
+---
+
+#### Packages
+| Command | Description | 
+|:--- | :--- |
+| `python -m pip install djangorestframework` | Main package for building REST APIs in Django |
+| `python -m pip install djangorestframework-gis` | Adds GIS/geographic support to Django REST Framework |
+| `python -m pip install pandas` | Mainly used for working with structured data such as CSV/Excel files, tables, filtering, grouping, and data analysis. |
+| `python -m pip install django-cors-headers` | is used to allow your Django backend to accept requests from a frontend running on a different origin.
+
+---
+
+#### Generate Secret Key
+| Command | 
+|:--- |
+| `python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"` | 
+Note: put this SECRET_KEY = os.getenv("SECRET_KEY") in your settings.py then this SECRET_KEY=your-generated-secret-key in .env
 
