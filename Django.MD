@@ -74,7 +74,7 @@ python -m django --version
 
 * **Create Config**
 ```
-django-admin startproject config .
+python -m django startproject config . 
 ```
 
 * **Create app**
