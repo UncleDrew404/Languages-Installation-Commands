@@ -15,7 +15,7 @@ Django is a free and open-source web framework for Python used to build web appl
 If you don't have install Python on your local machine. the following commands will install Python (Windows, Linux, MacOS).
 
 * **Windows**
-```
+```Powershell
 python --version
 py install
 ```
@@ -70,6 +70,10 @@ python -m pip install django
 python -m django --version
 ```
 
+- **Update Requirements.txt**
+```
+pip freeze > requirements.txt
+```
 ### Setup
 
 * **Create Config**
